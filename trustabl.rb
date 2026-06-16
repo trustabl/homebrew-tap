@@ -5,21 +5,21 @@
 class Trustabl < Formula
   desc "Static analyzer for agent reliability"
   homepage "https://github.com/trustabl/trustabl"
-  version "0.1.4"
+  version "0.1.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/trustabl/trustabl/releases/download/v0.1.4/trustabl_0.1.4_darwin_amd64.tar.gz"
-      sha256 "17ef948df666278a5249ee5f700435bd39af28131d570c3234c301560e31c071"
+      url "https://github.com/trustabl/trustabl/releases/download/v0.1.5/trustabl_0.1.5_darwin_amd64.tar.gz"
+      sha256 "0aada307814087d72f9f4b0f1aa2c59e4f602208f947491877fa667d981e264b"
 
       define_method(:install) do
         bin.install "trustabl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/trustabl/trustabl/releases/download/v0.1.4/trustabl_0.1.4_darwin_arm64.tar.gz"
-      sha256 "a849b26c42acf0da5c8931b19b4ccd9c31286a4cbb56eb17c4f0e213d0a3f962"
+      url "https://github.com/trustabl/trustabl/releases/download/v0.1.5/trustabl_0.1.5_darwin_arm64.tar.gz"
+      sha256 "dcde839a316d55d07bcf4782add0c80b47723434c8f3dc5e2d07cd1809ab4acc"
 
       define_method(:install) do
         bin.install "trustabl"
@@ -29,15 +29,15 @@ class Trustabl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trustabl/trustabl/releases/download/v0.1.4/trustabl_0.1.4_linux_amd64.tar.gz"
-      sha256 "a183d21f7a3a070d6469ab3d2ced5bf6f0319148c59a61f0394a91237baf3ee0"
+      url "https://github.com/trustabl/trustabl/releases/download/v0.1.5/trustabl_0.1.5_linux_amd64.tar.gz"
+      sha256 "51e29f6b1dfb0aa8e542e781866dedc68e1fbc119c1c0e73b7df2e0848f6657a"
       define_method(:install) do
         bin.install "trustabl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trustabl/trustabl/releases/download/v0.1.4/trustabl_0.1.4_linux_arm64.tar.gz"
-      sha256 "d90a62b37ccc580d85cf2fef5826344aeb8244ec34bffb4a653d95e894c9db4c"
+      url "https://github.com/trustabl/trustabl/releases/download/v0.1.5/trustabl_0.1.5_linux_arm64.tar.gz"
+      sha256 "5afc8c04464e257e8db40eb46d35550bcf5927be6a01c3c2735aba5cfb7505ca"
       define_method(:install) do
         bin.install "trustabl"
       end
