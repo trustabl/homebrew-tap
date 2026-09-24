@@ -5,21 +5,21 @@
 class Trustabl < Formula
   desc "Find and fix agent reliability issues"
   homepage "https://github.com/trustabl/agent-reliability-analyzer"
-  version "0.1.10"
+  version "0.1.11"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/trustabl/agent-reliability-analyzer/releases/download/v0.1.10/trustabl_0.1.10_darwin_amd64.tar.gz"
-      sha256 "a1b19a04a1e2c7ceab98e604f0fa0ef82fab7f8688bfbc0b5693aab60163d262"
+      url "https://github.com/trustabl/agent-reliability-analyzer/releases/download/v0.1.11/trustabl_0.1.11_darwin_amd64.tar.gz"
+      sha256 "497e2e392e66b6a6e52b62974b684edc4d6ed1ee346913300c05b7b47f7e7e92"
 
       define_method(:install) do
         bin.install "trustabl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/trustabl/agent-reliability-analyzer/releases/download/v0.1.10/trustabl_0.1.10_darwin_arm64.tar.gz"
-      sha256 "e9aad2e3fe5b0fa5485d17d47730d9d21c8a3fe11f87d6022e05ea546154a3f4"
+      url "https://github.com/trustabl/agent-reliability-analyzer/releases/download/v0.1.11/trustabl_0.1.11_darwin_arm64.tar.gz"
+      sha256 "8e8bc2fa4db33d02e4ab4fa5e0b816781e97bba41ab406a28d8196ec9bfe59eb"
 
       define_method(:install) do
         bin.install "trustabl"
@@ -29,15 +29,15 @@ class Trustabl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trustabl/agent-reliability-analyzer/releases/download/v0.1.10/trustabl_0.1.10_linux_amd64.tar.gz"
-      sha256 "f06eca20b4caab661a749beab4f5896b003f55f03045c5df0b21e5192175b080"
+      url "https://github.com/trustabl/agent-reliability-analyzer/releases/download/v0.1.11/trustabl_0.1.11_linux_amd64.tar.gz"
+      sha256 "9ebda41bfbadcfe55f45eec2f0d800bb813c3451ff2f5e0e7f65bdeceafd865c"
       define_method(:install) do
         bin.install "trustabl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trustabl/agent-reliability-analyzer/releases/download/v0.1.10/trustabl_0.1.10_linux_arm64.tar.gz"
-      sha256 "4706be67a52d10b554c693e063ce422d4a3eb9c17bcd75f4bc2cf9c67fbce279"
+      url "https://github.com/trustabl/agent-reliability-analyzer/releases/download/v0.1.11/trustabl_0.1.11_linux_arm64.tar.gz"
+      sha256 "ee4e7bb463f6002e07799486e33781db1380338a27895e7d1c186547920245bc"
       define_method(:install) do
         bin.install "trustabl"
       end
